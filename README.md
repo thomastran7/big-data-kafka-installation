@@ -25,3 +25,9 @@
 ```
 .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic rocket-man --from-beginning
 ```
+
+### Compile and Build the Fat Jar File
+Open PowerShell as Administrator in the root project folder, compile the code using Maven and create an executable jar file. Generated artificacts can be found in the new 'target' folder.
+```
+mvn clean compile assembly:single
+```
